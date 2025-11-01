@@ -1,3 +1,4 @@
+@@ -0,0 +1,124 @@
 /* Responsive design */
 @media (max-width: 768px) {
     body {
@@ -63,29 +64,21 @@
     
     .btn {
         height: 45px;
-        font-size: 0.85rem;
-		border-radius: 8px;
+        font-size: 0.9rem;
     }
     
     .sci-btn {
-        font-size: 0.7rem;
-		padding 2px;
+        font-size: 0.75rem;
     }
     
     .buttons-grid {
-        grid-template-columns: repeat(5, 1fr);
-		gap: 5px;
-		padding: 8px;
+        grid-template-columns: repeat(4, 1fr);
     }
     
-	.controls {
-		gap: 5px;
-		padding: 8px;
-	}
-	
-	.memory-controls {
-		gap: 5px;
-		padding: 8px
+    /* Hide some scientific buttons on very small screens */
+    .buttons-grid .sci-btn:nth-child(5),
+    .buttons-grid .sci-btn:nth-child(10) {
+        display: none;
     }
 }
 
